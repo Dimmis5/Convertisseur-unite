@@ -4,6 +4,8 @@ print("Convertisseur")
 print("1. Degres en celsus")
 print("2. Celsus en degres")
 print("3. Conversion Devise")
+print("4. Conversion de longueur m en km")
+print("5. Conversion de longueur de km en m")
 
 Choix = input("Choisir une option :")
 
@@ -20,8 +22,6 @@ elif Choix =="2" :
 elif Choix =="3":
 
     api_key = "73a15a97425e707ad2ceb2ca"
-
-
     url = "https://v6.exchangerate-api.com/v6/73a15a97425e707ad2ceb2ca/latest/USD"
 
     Devise_de_départ = input("Devise de départ : ").upper()
@@ -37,6 +37,18 @@ elif Choix =="3":
         print(f"\n {Montant} {Devise_de_départ} = {valeur:.2f} {Devise_arriver} (Taux: {taux})")
     else:
         print("Erreur lors de la récupération des données.")
+
+
+if Choix =="4":
+    valeur = float(input("Entrez une valeur en m :"))
+    resultat = valeur *0.001
+    print(resultat)
+
+
+if Choix =="5":
+    valeur = float(input("Entrez une valeur en km :"))
+    resultat = valeur * 1000
+    print(resultat)
 
 else :
     print("Option invalide")    
