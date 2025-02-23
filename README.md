@@ -2,7 +2,7 @@ Le but est d'avoir un programme pour faire des conversions d'unité en python :
 
 Exemple : 
 
-1. Température (Celsius, Fahrenheit, Kelvin) 
+🌡️1. Température (Celsius, Fahrenheit, Kelvin) 
 Celsius → Fahrenheit : F = (C × 9/5) + 32
 Fahrenheit → Celsius : C = (F - 32) × 5/9
 Celsius → Kelvin : K = C + 273.15
