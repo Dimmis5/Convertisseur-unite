@@ -6,6 +6,7 @@ print("2. Celsus en degres")
 print("3. Conversion Devise")
 print("4. Conversion de longueur m en km")
 print("5. Conversion de longueur de km en m")
+print("6. Conversion de poids gramme en kilogramme")
 
 Choix = input("Choisir une option :")
 
@@ -50,5 +51,16 @@ if Choix =="5":
     resultat = valeur * 1000
     print(resultat)
 
+if Choix == "6":
+    valeur = float(input("Entrez une valeur en gramme : "))
+    resultat = valeur * 0.001
+    print(resultat)
+
+if Choix == "7":
+    valeur = float(input("Entrez une valeur en kg :"))
+    resultat = valeur * 1000
+    print(resultat)
+
+    
 else :
     print("Option invalide")    
